@@ -2,6 +2,10 @@
     padding: 0 50px;
     position: relative;
 
+    &__container{
+        overflow: hidden;
+    }
+
     &__images {
         display: flex;
         // overflow: hidden;

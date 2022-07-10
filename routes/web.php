@@ -20,8 +20,8 @@ Route::get('/', function () {
 });
 
 //Show all listings
-Route::get('/{property_type}/{listing_type}/', function () {
-    return view('welcome');
+Route::get('/{property_type}/{listing_type}/{city}', function () {
+    return view('pages/listings');
 });
 
 //Single listing

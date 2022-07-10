@@ -5769,6 +5769,9 @@ progress {
   padding: 0 50px;
   position: relative;
 }
+.hero__container {
+  overflow: hidden;
+}
 .hero__images {
   display: flex;
   max-width: 100vw;
@@ -5842,4 +5845,23 @@ progress {
   align-items: center;
   font-weight: 700px;
   margin-right: 2rem;
+}
+
+.listings-page .listings-city {
+  position: relative;
+}
+.listings-page .listings-city__title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 50%;
+}
+.listings-page .listings-city img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
