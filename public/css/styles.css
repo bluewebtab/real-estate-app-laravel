@@ -5722,6 +5722,133 @@ progress {
     display: none !important;
   }
 }
+.account-layout .listings-city {
+  position: relative;
+  background: #1b1b1b;
+}
+.account-layout .listings-city__title {
+  font-weight: 700;
+  font-size: 4rem;
+  color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 50%;
+}
+.account-layout .listings-city img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  opacity: 0.8;
+}
+.account-layout .listings-filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.account-layout .listings-filter__wrapper {
+  border-radius: 5px;
+  background: #ffffff;
+  display: flex;
+  padding: 20px;
+  position: relative;
+  transform: translate(0, -50%);
+}
+.account-layout .listings-filter__option, .account-layout .listings-filter__button {
+  padding: 0px 15px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: 1px solid rgb(245, 246, 247);
+  margin-right: 0.5rem;
+  cursor: pointer;
+  transition: 0.2s all ease-in-out;
+  font-weight: 600;
+}
+.account-layout .listings-filter__option:hover, .account-layout .listings-filter__button:hover {
+  background-color: rgb(245, 246, 247);
+}
+.account-layout .listings-filter__button {
+  margin-right: 0;
+  border: 1px solid rgb(0, 213, 255);
+}
+.account-layout .listings-filter__button:hover {
+  background-color: rgb(0, 213, 255);
+  color: white;
+}
+.account-layout .listings-filter .fa-caret-down {
+  margin-left: 1rem;
+}
+.account-layout .listings-properties img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 5px;
+}
+.account-layout .listings-properties__box {
+  margin-bottom: 2rem;
+}
+.account-layout .listings-properties__item {
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  position: relative;
+}
+.account-layout .listings-properties__saved {
+  position: absolute;
+  right: 20px;
+  top: 30px;
+  width: 40px;
+  border-radius: 50%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1b1b1b;
+  background: white;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.account-layout .listings-properties__saved:hover, .account-layout .listings-properties__saved--active {
+  background-color: rgb(0, 213, 255);
+  color: white;
+}
+.account-layout .listings-properties__item-price {
+  font-size: 2rem;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.account-layout .listings-properties__item-details {
+  font-size: 1.1rem;
+  color: rgb(146, 149, 151);
+  display: block;
+}
+.account-layout .listings-properties__item-address {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+.account-layout .listings-properties__item-line {
+  background-color: rgb(146, 149, 151);
+  height: 1px;
+}
+.account-layout .listings-properties__item-owner {
+  font-size: 0.9rem;
+  color: rgb(146, 149, 151);
+  display: block;
+  text-align: center;
+}
+
 .header {
   padding: 20px 0;
 }
@@ -5758,11 +5885,33 @@ progress {
   height: 40px;
   border-radius: 50%;
   display: flex;
+  text-decoration: none;
+  border: 1px solid #00D5ff;
   justify-content: center;
   align-items: center;
-  color: #ffffff;
+  color: #00D5ff;
   margin-right: 1.5rem;
-  background-color: rgb(0, 213, 255);
+  cursor: pointer;
+}
+.header__account-link:hover {
+  background-color: #00D5ff;
+  color: #ffffff;
+}
+.header__account-heart {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  text-decoration: none;
+  border: 1px solid #00D5ff;
+  justify-content: center;
+  align-items: center;
+  color: #00D5ff;
+  margin-right: 1.5rem;
+}
+.header__account-heart:hover {
+  background-color: #00D5ff;
+  color: #ffffff;
 }
 
 .hero {
@@ -5926,6 +6075,26 @@ progress {
   padding: 10px;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  position: relative;
+}
+.listings-page .listings-properties__saved {
+  position: absolute;
+  right: 20px;
+  top: 30px;
+  width: 40px;
+  border-radius: 50%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1b1b1b;
+  background: white;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.listings-page .listings-properties__saved:hover, .listings-page .listings-properties__saved--active {
+  background-color: rgb(0, 213, 255);
+  color: white;
 }
 .listings-page .listings-properties__item-price {
   font-size: 2rem;
