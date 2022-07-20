@@ -1,4 +1,10 @@
-@extends('layouts.account') @section('content')
+@extends('layouts.account')
+
+
+@section('title', 'User Saved Listings - Hills Realty')
+@section('page-title', 'User Saved Listings - Hills Realty')
+
+@section('content')
 
 <div class="listings-properties">
   
@@ -17,11 +23,8 @@
                         <i class="fa-solid fa-bath"></i> 3
                         <i class="fa-solid fa-ruler-combined"></i> 2440 SQFT</span>
                     <span class="listings-properties__item-address">1414 Main Ave <br/> Beverly Hills, CA 23466</span>
-                    <div class="listings-properties__item-line">
-                    </div>
-                    <div class="listings-properties__item-owner">
-                        WX Realty
-                    </div>
+                    
+                    
                 </div>
             </div>
             

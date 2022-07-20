@@ -5745,6 +5745,17 @@ progress {
      object-position: center;
   opacity: 0.8;
 }
+.account-layout .content {
+  padding: 70px 0;
+}
+.account-layout .account__menu h2 {
+  font-weight: 700;
+}
+.account-layout .account__menu a {
+  display: block;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
 .account-layout .listings-filter {
   display: flex;
   justify-content: center;
@@ -5859,7 +5870,9 @@ progress {
 .header__logo {
   font-size: 2.3rem;
   font-weight: 700;
+  text-decoration: none;
   text-transform: uppercase;
+  color: #191f26;
 }
 .header__menu {
   display: flex;
