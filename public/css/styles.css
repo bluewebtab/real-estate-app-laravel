@@ -6135,3 +6135,49 @@ progress {
   display: block;
   text-align: center;
 }
+
+.account-layout .request-list h2 {
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.account-layout .request-list__wrapper {
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.account-layout .request-list__info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.account-layout .request-list__details {
+  font-size: 1.4rem;
+  color: #7c8791;
+}
+.account-layout .request-list__info-title {
+  font-weight: 700;
+}
+.account-layout .request-list__info-status {
+  padding: 10px 15px;
+}
+.account-layout .request-list__info-status--success {
+  background: #19f200;
+  color: white;
+  font-weight: 700;
+}
+.account-layout .request-list__info-status--cancelled {
+  background: rgb(255, 157, 0);
+  color: white;
+  font-weight: 700;
+}
+.account-layout .request-list__info-status--sold {
+  background: rgb(255, 0, 0);
+  color: white;
+  font-weight: 700;
+}

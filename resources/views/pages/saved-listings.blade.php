@@ -1,7 +1,6 @@
 @extends('layouts.account')
 
 
-@section('title', 'User Saved Listings - Hills Realty')
 @section('page-title', 'User Saved Listings - Hills Realty')
 
 @section('content')

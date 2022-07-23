@@ -23,7 +23,7 @@
                 class="listings-city__img"
             />
     
-            <h1 class="listings-city__title">@yield('title')</h1>
+            <h1 class="listings-city__title">@yield('page-title')</h1>
         </div>
         <div class="listings-filter">
             <div class="listings-filter__wrapper">
