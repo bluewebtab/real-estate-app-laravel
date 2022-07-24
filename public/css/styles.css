@@ -6181,3 +6181,66 @@ progress {
   color: white;
   font-weight: 700;
 }
+
+.auth-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.auth-page__form {
+  margin-top: 200px;
+  padding: 20px;
+  width: 400px;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 5px;
+}
+.auth-page__title {
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.auth-page__form-group {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.auth-page__form-label {
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+.auth-page__form-input {
+  padding: 0px 15px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: 1px solid rgb(245, 246, 247);
+  margin-right: 0.5rem;
+  cursor: pointer;
+  transition: 0.2s all ease-in-out;
+  font-weight: 600;
+}
+.auth-page__form-input:hover {
+  background-color: rgb(245, 246, 247);
+}
+.auth-page__form-button {
+  padding: 0px 15px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0;
+  background-color: rgb(0, 213, 255);
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid rgb(0, 213, 255);
+}
+.auth-page__form-button:hover {
+  border: 1px solid rgb(0, 213, 255);
+  background-color: white;
+  color: rgb(0, 213, 255);
+}
