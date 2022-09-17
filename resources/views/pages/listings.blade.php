@@ -38,7 +38,7 @@
             <div class="row">
                 @for($i = 1; $i <= 12; $i++)
                     <div class="col-sm-6 col-lg-4 col-xl-3 listings-properties__box">
-                        <div class="listings-properties__item">
+                        <a href="/listing/2123-grand-ave-miami-fl-33456/1" class="listings-properties__item">
                             <img src="{{ URL::to('/') }}/images/md-3.jpeg" />
 
                             <div class="listings-properties__saved">
@@ -53,7 +53,7 @@
                             <span class="listings-properties__item-address">1414 Main Ave <br/> Beverly Hills, CA 23466</span>
                         
                             
-                        </div>
+                        </a>
                     </div>
 
                 @endfor

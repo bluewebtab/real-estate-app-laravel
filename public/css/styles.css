@@ -6085,10 +6085,17 @@ progress {
   margin-bottom: 2rem;
 }
 .listings-page .listings-properties__item {
+  display: block;
   padding: 10px;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   position: relative;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
+  transition: all 0.3s ease-in-out;
+}
+.listings-page .listings-properties__item:hover {
+  color: rgb(11, 127, 243);
 }
 .listings-page .listings-properties__saved {
   position: absolute;
@@ -6243,4 +6250,70 @@ progress {
   border: 1px solid rgb(0, 213, 255);
   background-color: white;
   color: rgb(0, 213, 255);
+}
+
+.single-listing-page .listing-top {
+  position: relative;
+}
+.single-listing-page .listing-top__img {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 600px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.single-listing-page .listing-top__form-wrapper {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 600px;
+}
+.single-listing-page .listing-top__form-wrapper .container {
+  height: 600px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.single-listing-page .listing-top__form {
+  width: 300px;
+  height: 500px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  padding: 20px;
+}
+.single-listing-page .listing-top__form-title {
+  font-size: 1rem;
+  font-weight: 700;
+}
+.single-listing-page .listing-top__form-group {
+  margin-bottom: 0.5rem;
+}
+.single-listing-page .listing-top__form-group--hor {
+  display: flex;
+}
+.single-listing-page .listing-top__form-group--hor .listing-top__form-option {
+  width: 100%;
+}
+.single-listing-page .listing-top__form-option, .single-listing-page .listing-top__form-button {
+  padding: 0px 15px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: 1px solid rgb(245, 246, 247);
+  margin-right: 0.5rem;
+  cursor: pointer;
+  transition: 0.2s all ease-in-out;
+  font-weight: 600;
+}
+.single-listing-page .listing-top__form-option:nth-last-child(1), .single-listing-page .listing-top__form-button:nth-last-child(1) {
+  margin-right: 0;
+}
+.single-listing-page .listing-top__form-option:hover, .single-listing-page .listing-top__form-button:hover {
+  background-color: rgb(245, 246, 247);
 }
