@@ -28,7 +28,6 @@
 
         &__form{
             width: 300px;
-            height: 500px;
             background: white;
             border-radius: 15px;
             box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
@@ -37,14 +36,18 @@
         }
 
 
-        &__form-title{
+        &__form-label{
+            display: block;
             font-size: 1rem;
             font-weight: 700;
-            
+            margin-bottom: .5rem;
+
         }
 
 
         &__form-group{
+            width: 100%;
+            margin-bottom: .5rem;
             &--hor{
                 display: flex;
                 .listing-top__form-option{
@@ -60,6 +63,7 @@
        
 
         &__form-option, &__form-button{
+            width: 100%;
             padding: 0px 15px;
             height: 40px;
             display: flex;
@@ -77,6 +81,17 @@
             }
             &:hover{
                 background-color: rgb(245, 246, 247);
+            }
+        }
+
+        &__form-button{
+            margin-right: 0;
+            color: #ffffff;
+            background-color: rgb(0, 213, 255);
+        
+            &:hover{
+                background-color: rgb(0, 149, 255);
+                color:white;
             }
         }
     }
